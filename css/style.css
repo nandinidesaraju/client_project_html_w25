@@ -16,22 +16,27 @@ html {
      color: #333;
      background-color: #f9f9f9;
  }
+ nav a:hover {
+     text-decoration: underline;
+ }
  
- .skip-link {
+ .skip a {
      position: absolute;
      top: -40px;
      left: 0;
-     background: #007bff;
-     color: white;
-     padding: 10px;
-     z-index: 1000;
-     text-decoration: none;
- }
+     background: white;
+     padding: 6px;
+     transition: top 1s ease-out;
+     z-index: 1;
+}
  
- .skip-link:focus {
-     top: 0;
- }
- 
+.skip a:focus {
+     top: 20px;
+}
+:focus {
+     border: 2px solid black;
+}
+
  header {
      background-color: #00274c;
      color: white;
@@ -132,6 +137,59 @@ html {
      color: #666;
      margin-top: 10px;
  }
+ .grid-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+     gap: 20px; /* Space between grid items */
+     padding: 20px;
+     max-width: 1200px;
+     margin: 0 auto;
+   }
+   
+   .grid-item {
+     background-color: white;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     text-align: center;
+   }
+   
+   .grid-item img {
+     width: 100%;
+     height: auto;
+     display: block;
+   }
+   
+   .grid-item p {
+     font-size: 1.2rem;
+     font-weight: bold;
+     margin: 10px 0;
+     color: #00274c;
+   }
+   .multi-column {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+     gap: 20px; /* Space between grid items */
+   }
+   
+   /* Ensure images and paragraphs align well in the grid */
+   .multi-column p, .multi-column figure {
+     margin: 0; /* Remove default margins */
+   }
+   
+   .multi-column img {
+     width: 100%; 
+     height: auto; 
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   }
+   
+   .multi-column figcaption {
+     font-style: italic;
+     color: #666;
+     margin-top: 10px;
+   }
  
  footer {
      background-color: #00274c;
