@@ -60,11 +60,16 @@
                 <img src="images/UMSI_Campus_09162021_015.JPG" width="400" alt="North Quad">
             </figure>
         </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("year").textContent = new Date().getFullYear();
+            });
+        </script>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan SI students navigate the academic advising website, and learn about advising appointments and services."
         ChatGPT. (2025). ChatGPT (January 24th version) [Large language model]. -->
     </main>
     <footer>
-        <p>UMSI Academic Advising | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p><span id="year"></span> UMSI Student Success Portal. All rights reserved. | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
       </footer>
 </body>
 </html>

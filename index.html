@@ -95,10 +95,15 @@
                 <li><strong>Housing and Dining:</strong> Find comfortable and convenient living arrangements, including university housing and off-campus rentals. Explore diverse dining options that cater to different dietary needs.</li>
             </ul>
         </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("year").textContent = new Date().getFullYear();
+            });
+        </script>
     </main>
     
     <footer>
-        <p>UMSI Academic Advising | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p><span id="year"></span> UMSI Student Success Portal. All rights reserved. | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
       </footer>
 
 </body>

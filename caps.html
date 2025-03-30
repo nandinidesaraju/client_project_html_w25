@@ -36,12 +36,13 @@
             </figure>
             <p>Your mental health and well-being are essential for your success at the University of Michigan. CAPS provides a wide range of resources designed to support your emotional, psychological, and academic well-being. Whether you are feeling overwhelmed by coursework, experiencing personal challenges, or simply need someone to talk to, CAPS is here to help.</p>
             <p>We recognize that every student’s journey is unique, and our services are tailored to meet diverse needs. From confidential one-on-one counseling to group therapy and skill-building workshops, our team is dedicated to fostering a supportive and understanding environment. Seeking help is a sign of strength, and our goal is to provide the tools and resources you need to thrive both academically and personally.</p>
-            <figure>
-                <img src="images/MCOMMONS-WinterSemester2025-01.jpg" width="400" alt="Students engaging in conversation">
-            </figure>
+            
         </section>
         <section>
             <h2>Services Offered</h2>
+            <figure>
+                <img src="images/MCOMMONS-WinterSemester2025-01.jpg" width="400" alt="Students engaging in conversation">
+            </figure>
             <ul>
                 <li><strong>Individual Counseling:</strong> Meet one-on-one with a licensed counselor to discuss personal, academic, or professional concerns in a confidential setting. These sessions can help you navigate stress, relationships, identity exploration, and other challenges you may be facing.</li>
                 <li><strong>Group Therapy:</strong> Join support groups where students with shared experiences can connect, learn from one another, and receive guidance from trained professionals. Group therapy provides a sense of community and belonging, helping students feel less alone in their struggles.</li>
@@ -65,11 +66,16 @@
             </ul>
             <p>No matter where you are, you have access to CAPS resources. Our goal is to make sure all students can find the support they need, when and where they need it.</p>
         </section>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("year").textContent = new Date().getFullYear();
+            });
+        </script>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan SI students have access to CAPS resources, and know about how to schedule appointments and office locations."
         ChatGPT. (2025). ChatGPT (January 24th version) [Large language model]. -->
     </main>
     <footer>
-        <p>UMSI Academic Advising | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+        <p><span id="year"></span> UMSI Student Success Portal. All rights reserved. | <a href="tel:+17347632285">734-763-2285</a> | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
       </footer>
 </body>
 </html>
