@@ -105,12 +105,15 @@ main {
   padding: min(20px, 5%);
   max-width: 1200px;
   margin: 0 auto;
-  
   scroll-snap-type: y mandatory;
   overflow-y: scroll; 
   height: 100vh; /* Full viewport height for snapping */
 }
 
+.scrollable-section {
+  scroll-snap-align: start;
+  outline: none;
+}
 /* Make Each Section a Snap Point - Unique Feature (Used Perplexity AI to help */
 section {
   margin-bottom: min(40px, 10%);
