@@ -79,9 +79,15 @@ nav ul {
   padding: 10px 0;
 }
 
+a {
+  text-decoration: underline; 
+}
+a:hover {
+  text-decoration: none; 
+}
 nav a {
   color: #ffff; 
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
@@ -92,6 +98,7 @@ nav a:hover,
 nav a[aria-current="page"] {
   background-color: #ffcb05;
   color: #00274c;
+  text-decoration: none;
 }
 
 main {
@@ -101,7 +108,7 @@ main {
   
   scroll-snap-type: y mandatory;
   overflow-y: scroll; 
-  height: 100vh; 
+  height: 100vh; /* Full viewport height for snapping */
 }
 
 /* Make Each Section a Snap Point - Unique Feature (Used Perplexity AI to help */
@@ -251,7 +258,7 @@ footer {
 
 footer a {
   color: #ffcb05;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 footer a:hover {
